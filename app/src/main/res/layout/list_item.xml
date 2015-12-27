@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lyt_container"
+    android:background="#FFECEAEA"
+
+
+    >
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/innerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@layout/outershape"
+
+     >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_slack_grey600_48dp"
+            android:drawableRight="@drawable/ic_pin_grey600_18dp"
+            android:height="70dp"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            android:text="New Text"
+            android:id="@+id/txt_data"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3"
+        android:height="80dp"
+        android:padding= "16dp"
+        android:background="@layout/innershape"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+
+
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_delete"
+            android:gravity="center|start"
+            android:text=" Swipe to Confirm"
+            android:drawableLeft="@drawable/ic_pin_off_grey600_18dp"
+            android:clickable="false"
+            android:layout_weight="2"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:id="@+id/txt_undo"
+            android:text="UNDO"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</FrameLayout>
